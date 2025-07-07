@@ -1,0 +1,11 @@
+<widget id="__PACKAGE_NAME__" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+  <name>__APP_NAME__</name>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-navigation href="*"/>
+  <platform name="android">
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="android:usesCleartextTraffic">
+      <application android:usesCleartextTraffic="true" />
+    </edit-config>
+  </platform>
+</widget>
